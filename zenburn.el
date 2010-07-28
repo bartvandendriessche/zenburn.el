@@ -1,10 +1,49 @@
 ;;; zenburn.el --- just some alien fruit salad to keep you in the zone
+
 ;; Copyright (C) 2003, 2004, 2005, 2006  Daniel Brockman
 ;; Copyright (C) 2009  Adrian C., Bastien Guerry
 
 ;; Author: Daniel Brockman <daniel@brockman.se>
-;; URL: http://www.brockman.se/software/zenburn/zenburn.el
-;; Updated: 2010-07-19 20:10
+;; Contributors:
+;; Adrian C.
+;; Bastien Guerry
+;; Dirk-Jan C. Binnema
+;; Bozhidar Batsov
+;; Stefan Kangas
+;; Keffin Barnaby
+;; Adapted-By: Bart Vandendriessche <bart.vandendriessche@gmail.com>
+;; Keywords: colortheme zenburn theme syntax higlighting
+
+;; This file is NOT part of GNU Emacs.
+
+;; This file is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU General Public License as
+;; published by the Free Software Foundation; either version 2 of
+;; the License, or (at your option) any later version.
+
+;; This file is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty
+;; of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+;; See the GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public
+;; License along with GNU Emacs; if not, write to the Free
+;; Software Foundation, 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+;;; Commentary:
+
+;; Some packages ship with broken implementations of `format-spec';
+;; for example, stable versions of TRAMP and ERC do this.  To fix
+;; this, you can put the following at the end of your ~/.emacs:
+
+;;   (unless (zenburn-format-spec-works-p)
+;;     (zenburn-define-format-spec))
+
+;; Thanks to Jani Nurminen, who created the original zenburn color
+;; theme for vim.  I'm just copying him. :-)
+
+;;; Change Log:
 
 ;; Changes (2010-07), Keffin Barnaby
 ;; - Added fixme-face using vim zenburn todo colours (highlight-fixmes-mode)
@@ -43,46 +82,14 @@
 
 ;; Adrian C. and Bastien Guerry added org-mode faces.
 
-;; This file is free software; you can redistribute it and/or
-;; modify it under the terms of the GNU General Public License as
-;; published by the Free Software Foundation; either version 2 of
-;; the License, or (at your option) any later version.
-
-;; This file is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty
-;; of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-;; See the GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public
-;; License along with GNU Emacs; if not, write to the Free
-;; Software Foundation, 51 Franklin Street, Fifth Floor,
-;; Boston, MA 02110-1301, USA.
-
-;;; Commentary:
-
-;; Some packages ship with broken implementations of `format-spec';
-;; for example, stable versions of TRAMP and ERC do this.  To fix
-;; this, you can put the following at the end of your ~/.emacs:
-
-;;   (unless (zenburn-format-spec-works-p)
-;;     (zenburn-define-format-spec))
-
-;; Thanks to Jani Nurminen, who created the original zenburn color
-;; theme for vim.  I'm just copying him. :-)
-
 ;;; Short-Term Wishlist:
-
 ;; Theme the ansi-term faces `term-red', etc., and the ERC faces
 ;; `fg:erc-color-face1', etc.
-
 ;; Theme `gnus-server-offline-face', `gnus-server-opened-face', and
 ;; `gnus-server-denied-face'.  First, find out what they hell they do.
-
 ;; Theme `gnus-emphasis-highlight-words' after finding out what it
 ;; does.
-
 ;; Theme `emms-stream-name-face' and `emms-stream-url-face'.
-
 ;; Theme `ido-indicator-face'.
 
 ;;; Code:
@@ -1363,11 +1370,4 @@ static char *gnus-pointer[] = {
 (defalias 'zenburn #'color-theme-zenburn)
 
 (provide 'zenburn)
-
-;; Local Variables:
-;; time-stamp-format: "%:y-%02m-%02d %02H:%02M"
-;; time-stamp-start: "Updated: "
-;; time-stamp-end: "$"
-;; End:
-
 ;;; zenburn.el ends here.
