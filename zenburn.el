@@ -12,6 +12,7 @@
 ;; Stefan Kangas
 ;; Keffin Barnaby
 ;; Adapted-By: Bart Vandendriessche <bart.vandendriessche@gmail.com>
+;; Version: 1.8
 ;; Keywords: colortheme zenburn theme syntax higlighting
 
 ;; This file is NOT part of GNU Emacs.
