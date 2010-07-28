@@ -1,0 +1,3 @@
+I'm trying to get zenburn.el included in ELPA (http://tromey.com/elpa/). Once that's done, you should be able to install it using ELPA's package.el.
+
+Instructions on how to install package.el can be found here: http://tromey.com/elpa/install.html
